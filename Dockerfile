@@ -1,5 +1,7 @@
 FROM fedora
 
+ENV HOME /root
+
 ENV MINICONDA_URL https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 RUN dnf upgrade --refresh -y
