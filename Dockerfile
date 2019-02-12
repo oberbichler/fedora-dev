@@ -18,4 +18,7 @@ RUN curl $MINICONDA_URL -o $HOME/miniconda.sh && \
     bash $HOME/miniconda.sh -b -p $HOME/miniconda && \
     rm -f $HOME/miniconda.sh
 
+RUN source $HOME/miniconda/bin/activate && \
+    conda install -y ipython numpy scipy
+
 WORKDIR $HOME
