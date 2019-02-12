@@ -10,7 +10,7 @@ RUN dnf install -y \
     boost-devel \
     bzip2 \
     eigen3-devel \
-    gcc \
+    gcc-c++ \
     ninja-build \
     pybind11-devel
 
