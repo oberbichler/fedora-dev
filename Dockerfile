@@ -13,7 +13,7 @@ RUN dnf install -y \
     gcc-c++ \
     ninja-build \
     pybind11-devel \
-    vim
+    vim-minimal
 
 RUN curl $MINICONDA_URL -o $HOME/miniconda.sh && \
     bash $HOME/miniconda.sh -b -p $HOME/miniconda && \
