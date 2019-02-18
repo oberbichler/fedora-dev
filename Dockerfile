@@ -12,7 +12,8 @@ RUN dnf install -y \
     eigen3-devel \
     gcc-c++ \
     ninja-build \
-    pybind11-devel
+    pybind11-devel \
+    vim
 
 RUN curl $MINICONDA_URL -o $HOME/miniconda.sh && \
     bash $HOME/miniconda.sh -b -p $HOME/miniconda && \
